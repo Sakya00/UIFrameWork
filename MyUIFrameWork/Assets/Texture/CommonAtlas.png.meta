@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 2647946a2b634804eb0111314d7759a9
+timeCreated: 1470301399
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CommonAtlas_0
+    21300002: CommonAtlas_1
+    21300004: CommonAtlas_2
+    21300006: CommonAtlas_3
+    21300008: CommonAtlas_4
+    21300010: CommonAtlas_5
+    21300012: CommonAtlas_6
+    21300014: CommonAtlas_7
+    21300016: CommonAtlas_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CommonAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 95
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 63}
+        - {x: -47.5, y: 46}
+        - {x: -47.5, y: -63}
+        - {x: 27.5, y: -63}
+        - {x: 47.5, y: -42}
+        - {x: 47.5, y: 63}
+      - - {x: 26.5, y: -59}
+        - {x: 25.5, y: -63}
+        - {x: 35.5, y: -63}
+        - {x: 47.5, y: -52}
+        - {x: 47.5, y: -40}
+        - {x: 46.5, y: -40}
+      - - {x: -47.5, y: 63}
+        - {x: -47.5, y: 55}
+        - {x: -46.5, y: 55}
+        - {x: -40.5, y: 61}
+        - {x: -40.5, y: 63}
+    - name: CommonAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 40}
+        - {x: -18, y: 40}
+        - {x: -40, y: 27}
+        - {x: -40, y: -26}
+        - {x: -36, y: -39}
+        - {x: -34, y: -40}
+        - {x: 33, y: -40}
+        - {x: 40, y: -8}
+        - {x: 40, y: 25}
+    - name: CommonAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 31
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CommonAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CommonAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 70
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 56}
+        - {x: -35, y: 49}
+        - {x: -35, y: -53}
+        - {x: -34, y: -56}
+        - {x: 35, y: -56}
+        - {x: 35, y: 49}
+        - {x: 31, y: 56}
+    - name: CommonAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 218
+        width: 96
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CommonAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 218
+        width: 72
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: CommonAtlas_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 44.5}
+        - {x: -44.5, y: -44.5}
+        - {x: 44.5, y: -44.5}
+        - {x: 44.5, y: 44.5}
+    - name: CommonAtlas_8
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 130
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 39.5}
+        - {x: -17.5, y: 39.5}
+        - {x: -36.5, y: 27.5}
+        - {x: -36.5, y: -39.5}
+        - {x: 32.5, y: -39.5}
+        - {x: 34.5, y: -37.5}
+        - {x: 36.5, y: -16.5}
+        - {x: 36.5, y: 23.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
