@@ -5,26 +5,32 @@ using System;
 public class MainGUI : UIBaseWindow
 {
     private GUIData guidata;
+    private GameObject closeBtn;
 
 
     public override void Init()
     {
-        throw new NotImplementedException();
+        //为界面赋值ID
+        guidata = new GUIData();
+        guidata.id = GUIDef.GUIID.GUI_MainMenuGUI;
+
+        closeBtn = transform.Find("close_btn").gameObject;
+        UIEventListener.Get(closeBtn).onClick = delegate { Control.guiManager.Close(GUIDef.GUIID.GUI_MainMenuGUI); };
     }
 
     public override void Open()
     {
-        throw new NotImplementedException();
+
     }
 
     public override void Close()
     {
-        throw new NotImplementedException();
+
     }
 
     public override void Action()
     {
-        throw new NotImplementedException();
+
     }
 
     public override GUIData GetGUiData()

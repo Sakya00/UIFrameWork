@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Control : MonoBehaviour
 {
+    [System.NonSerialized]
     public GameObject guiManagerObj;
     public static GUIManager guiManager;
 
@@ -10,5 +11,6 @@ public class Control : MonoBehaviour
     {
         guiManagerObj = new GameObject("GuiManager");
         guiManager = guiManagerObj.AddComponent<GUIManager>();
+        guiManager.SetContorlObject(this);
     }
 }
