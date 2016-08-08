@@ -29,4 +29,23 @@ public class Utility : MonoBehaviour
             ChangeChildLayer(child, layer);
         }
     }
+
+    /// <summary>
+    /// 查找子节点
+    /// </summary>
+    public static Transform FindDeepChild(GameObject _target, string _childName)
+    {
+        Transform resultTrs = null;
+        resultTrs = _target.transform.Find(_childName);
+        if (resultTrs == null)
+        {
+            foreach (Transform trs in _target.transform)
+            {
+                resultTrs = Utility.FindDeepChild(trs.gameObject, _childName);
+                if (resultTrs != null)
+                    return resultTrs;
+            }
+        }
+        return resultTrs;
+    }
 }

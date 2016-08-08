@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2647946a2b634804eb0111314d7759a9
-timeCreated: 1470301399
+timeCreated: 1470642107
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -13,6 +13,7 @@ TextureImporter:
     21300012: CommonAtlas_6
     21300014: CommonAtlas_7
     21300016: CommonAtlas_8
+    21300018: CommonAtlas_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -203,6 +204,17 @@ TextureImporter:
         - {x: 34.5, y: -37.5}
         - {x: 36.5, y: -16.5}
         - {x: 36.5, y: 23.5}
+    - name: CommonAtlas_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 117
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
