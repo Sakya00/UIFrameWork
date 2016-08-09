@@ -8,10 +8,11 @@ public class Utility : MonoBehaviour
     /// </summary>
     public static void AddChildToTarget(Transform target, Transform child)
     {
-        child.parent = target;
-        child.localScale = Vector3.one;
-        child.localPosition = Vector3.zero;
-        child.localEulerAngles = Vector3.zero;
+        //child.parent = target;
+        //child.localScale = Vector3.one;
+        //child.localPosition = Vector3.zero;
+        //child.localEulerAngles = Vector3.zero;
+        child.SetParent(target,false);
 
         ChangeChildLayer(child, target.gameObject.layer);
     }

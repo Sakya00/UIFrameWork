@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class MainGUI : UIBaseWindow
+public class RightGUI : UIBaseWindow
 {
     private GUIData guidata;
     private GameObject closeBtn;
@@ -11,13 +11,13 @@ public class MainGUI : UIBaseWindow
     {
         //为界面赋值ID
         guidata = new GUIData();
-        guidata.id = GUIDef.GUIID.GUI_MainMenuGUI;
+        guidata.id = GUIDef.GUIID.GUI_RightGUI;
         guidata.showType = UIWindowType.Fixed;
         guidata.showMode = UIWindowShowMode.DoNothing;
         guidata.colliderMode = UIWindowColliderMode.Normal;
 
-        closeBtn = transform.Find("close_btn").gameObject;
-        UIEventListener.Get(closeBtn).onClick = delegate { Control.guiManager.Close(GUIDef.GUIID.GUI_MainMenuGUI); };
+        closeBtn = transform.Find("Content/close_btn").gameObject;
+        UIEventListener.Get(closeBtn).onClick = delegate { Control.guiManager.Close(this); };
     }
 
     public override void Open()
@@ -25,12 +25,12 @@ public class MainGUI : UIBaseWindow
 
     }
 
-    public override void Close()
+    public override void Action()
     {
 
     }
 
-    public override void Action()
+    public override void Close()
     {
 
     }

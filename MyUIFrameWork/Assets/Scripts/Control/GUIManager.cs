@@ -72,6 +72,10 @@ public class GUIManager : MonoBehaviour
                 window = uiObj.GetComponent<UIBaseWindow>();
                 allWindows.Add(window);
             }
+            else
+            {
+                Debug.LogWarning("未加载Prefab,ID:-->" + id);
+            }
         }
 
         //TODO:调整界面层级
@@ -88,6 +92,8 @@ public class GUIManager : MonoBehaviour
     /// <param name="window"></param>
     private void AddColliderBg(UIBaseWindow window)
     {
+        if (window == null) return;
+
         GUIData gdata = window.GetGUiData();
 
         if (gdata != null)
@@ -153,6 +159,42 @@ public class GUIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 关闭指定实例
+    /// </summary>
+    /// <param name="gui"></param>
+    public void Close(UIBaseWindow gui)
+    {
+        for (int i = allWindows.Count - 1; i >= 0; i--)
+        {
+            UIBaseWindow window = allWindows[i];
+            if (window == gui)
+            {
+                //关闭此界面
+                allWindows.Remove(window);
+                Destroy(window.gameObject);
+                return;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 根据ID获取界面实例
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public UIBaseWindow FindGUI(GUIDef.GUIID id)
+    {
+        for (int i = 0; i < allWindows.Count; i++)
+        {
+            if (allWindows[i].GetGUiData().id == id)
+            {
+                return allWindows[i];
+            }
+        }
+        return null;
+    }
+
     private void Init()
     {
         GameObject canvasObj = GameObject.Find("Canvas");
@@ -167,6 +209,5 @@ public class GUIManager : MonoBehaviour
 
         //加载背景图
         bgTexture = Resources.Load("UITexture/bgMask") as Texture;
-
     }
 }

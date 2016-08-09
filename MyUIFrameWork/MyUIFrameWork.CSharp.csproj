@@ -63,15 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Control.cs" />
-    <Compile Include="Assets\Scripts\GUIData.cs" />
-    <Compile Include="Assets\Scripts\GUIDef.cs" />
-    <Compile Include="Assets\Scripts\GUIManager.cs" />
-    <Compile Include="Assets\Scripts\MainGUI.cs" />
+    <Compile Include="Assets\Scripts\Control\Control.cs" />
+    <Compile Include="Assets\Scripts\Control\GUIManager.cs" />
+    <Compile Include="Assets\Scripts\Control\UIEventListener.cs" />
+    <Compile Include="Assets\Scripts\Model\GUIData.cs" />
+    <Compile Include="Assets\Scripts\Model\GUIDef.cs" />
+    <Compile Include="Assets\Scripts\Model\UIBaseWindow.cs" />
     <Compile Include="Assets\Scripts\Test\OpenGUITest.cs" />
-    <Compile Include="Assets\Scripts\UIBaseWindow.cs" />
-    <Compile Include="Assets\Scripts\UIEventListener.cs" />
-    <Compile Include="Assets\Scripts\Utility.cs" />
+    <Compile Include="Assets\Scripts\Utils\Utility.cs" />
+    <Compile Include="Assets\Scripts\View\LeftGUI.cs" />
+    <Compile Include="Assets\Scripts\View\MainGUI.cs" />
+    <Compile Include="Assets\Scripts\View\RightGUI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
